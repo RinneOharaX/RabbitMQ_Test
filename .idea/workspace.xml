@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bcb2652-c26b-48ef-a50f-87cf7b982bd5" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9bcb2652-c26b-48ef-a50f-87cf7b982bd5" name="Changes" comment="Consumer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/GetChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Producer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Consumer_test" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,7 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2MaM0yoG7d07QhMBsZs6OuGRKdF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -53,8 +56,8 @@
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Producer">
-    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.com.example.rabbitmq.Producer">
+    <configuration name="com.example.rabbitmq.Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.Consumer" />
       <module name="RabbitMQ_Test" />
       <extension name="coverage">
@@ -67,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.example.rabbitmq.Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.Producer" />
       <module name="RabbitMQ_Test" />
       <extension name="coverage">
@@ -82,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Producer" />
-        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.com.example.rabbitmq.Producer" />
+        <item itemvalue="Application.com.example.rabbitmq.Consumer" />
         <item itemvalue="Application.Producer" />
       </list>
     </recent_temporary>
@@ -96,8 +99,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678001039050</updated>
-      <workItem from="1678001042131" duration="5238000" />
+      <workItem from="1678001042131" duration="5921000" />
     </task>
+    <task id="LOCAL-00001" summary="Consumer">
+      <created>1678007327591</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678007327591</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+    <MESSAGE value="Consumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consumer" />
   </component>
 </project>
