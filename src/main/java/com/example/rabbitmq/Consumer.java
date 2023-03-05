@@ -17,14 +17,8 @@ public class Consumer {
     public  static  final  String QUEUE_NAME="hello";
 
     public static void main(String[] args) throws IOException, TimeoutException {
-        //创建连接工厂,建立连接
-        ConnectionFactory connectionFactory=new ConnectionFactory();
-        connectionFactory.setHost("192.168.153.100");
-        connectionFactory.setUsername("admin");
-        connectionFactory.setPassword("zxy902");
-        Connection connection = connectionFactory.newConnection();
-        //创建信道
-        Channel channel = connection.createChannel();
+        //使用工具类,建立连接,创建信道
+        Channel channel = GetChannel.getChannel();
 
         DeliverCallback deliverCallback=new DeliverCallback() {
             @Override

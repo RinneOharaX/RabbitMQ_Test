@@ -16,16 +16,10 @@ import java.util.concurrent.TimeoutException;
  */
 public class Producer {
     public  static  final  String QUEUE_NAME="hello";
+
     public static void main(String[] args) throws IOException, TimeoutException {
-        //创建一个连接工厂，并且设置ip与账号密码
-        ConnectionFactory connectionFactory=new ConnectionFactory();
-        connectionFactory.setHost("192.168.153.100");
-        connectionFactory.setUsername("admin");
-        connectionFactory.setPassword("zxy902");
-        //创建连接
-        Connection connection = connectionFactory.newConnection();
-        //创建信道
-        Channel channel = connection.createChannel();
+        //调用工具类，建立连接，得到信道
+        Channel channel = GetChannel.getChannel();
         /**创建一个队列，省略交换机
          * 参数为
          * 1.队列名称
