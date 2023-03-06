@@ -1,5 +1,6 @@
-package com.example.rabbitmq;
+package com.example.rabbitmq.test01;
 
+import com.example.rabbitmq.Utils.RabbitMqUtils;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -19,7 +20,7 @@ public class Producer {
 
     public static void main(String[] args) throws IOException, TimeoutException {
         //调用工具类，建立连接，得到信道
-        Channel channel = GetChannel.getChannel();
+        Channel channel = RabbitMqUtils.getChannel();
         /**创建一个队列，省略交换机
          * 参数为
          * 1.队列名称

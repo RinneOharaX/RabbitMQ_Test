@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bcb2652-c26b-48ef-a50f-87cf7b982bd5" name="Changes" comment="Consumer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/GetChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Producer.java" afterDir="false" />
+    <list default="true" id="9bcb2652-c26b-48ef-a50f-87cf7b982bd5" name="Changes" comment="Item">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/test01/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/GetChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Utils/RabbitMqUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rabbitmq/test01/Producer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -47,22 +48,22 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/RabbitMQ_Test",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/RabbitMQ_Test&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.com.example.rabbitmq.Producer">
-    <configuration name="com.example.rabbitmq.Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.Consumer" />
+}</component>
+  <component name="RunManager" selected="Application.com.example.rabbitmq.test02.Consumer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.test01.Consumer" />
       <module name="RabbitMQ_Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.rabbitmq.*" />
+          <option name="PATTERN" value="com.example.rabbitmq.Utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.rabbitmq.Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.Producer" />
+    <configuration name="Procducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.test02.Procducer" />
       <module name="RabbitMQ_Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.rabbitmq.*" />
+          <option name="PATTERN" value="com.example.rabbitmq.test02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,11 +84,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.test01.Producer" />
+      <module name="RabbitMQ_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rabbitmq.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.rabbitmq.test02.Consumer" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.test02.Consumer" />
+      <module name="RabbitMQ_Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rabbitmq.test02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.example.rabbitmq.test02.Consumer" />
+      <item itemvalue="Application.com.example.rabbitmq.Consumer" />
+      <item itemvalue="Application.Procducer" />
+      <item itemvalue="Application.com.example.rabbitmq.Producer" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.example.rabbitmq.test02.Consumer" />
+        <item itemvalue="Application.Procducer" />
         <item itemvalue="Application.com.example.rabbitmq.Producer" />
         <item itemvalue="Application.com.example.rabbitmq.Consumer" />
-        <item itemvalue="Application.Producer" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678001039050</updated>
       <workItem from="1678001042131" duration="5921000" />
+      <workItem from="1678082516333" duration="4007000" />
     </task>
     <task id="LOCAL-00001" summary="Consumer">
       <created>1678007327591</created>

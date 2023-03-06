@@ -1,4 +1,4 @@
-package com.example.rabbitmq;
+package com.example.rabbitmq.Utils;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeoutException;
  * @USER: Administrator
  * @DATE: 2023/3/5 17:14
  */
-public class GetChannel {
+public class RabbitMqUtils {
     public static Channel getChannel() throws IOException, TimeoutException {
         //创建连接工厂,建立连接
         ConnectionFactory connectionFactory=new ConnectionFactory();

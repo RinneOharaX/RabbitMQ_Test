@@ -1,9 +1,9 @@
-package com.example.rabbitmq;
+package com.example.rabbitmq.test01;
 
+import com.example.rabbitmq.Utils.RabbitMqUtils;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.concurrent.TimeoutException;
 
 /**
@@ -18,7 +18,7 @@ public class Consumer {
 
     public static void main(String[] args) throws IOException, TimeoutException {
         //使用工具类,建立连接,创建信道
-        Channel channel = GetChannel.getChannel();
+        Channel channel = RabbitMqUtils.getChannel();
 
         DeliverCallback deliverCallback=new DeliverCallback() {
             @Override
